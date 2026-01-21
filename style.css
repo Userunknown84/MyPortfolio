@@ -532,3 +532,7 @@ footer {
   backdrop-filter: blur(10px);
   background: rgba(15, 23, 42, 0.85);
 }
+.Upcomping{
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}

@@ -1,269 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Aditya Sharma | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aditya Sharma | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h2 class="logo">
+        <span class="terminal-symbol">&gt;_</span>
+        <span class="terminal-bracket">[</span>
+        <span class="terminal-user">sudo::Aditya</span>
+        <span class="terminal-bracket">]</span>
+      </h2>
 
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Collaboration">Collaboration</a></li>
+        <li><a href="#Achievements">Achievements</a></li>
+        <li><a href="#HireMe">Hire Me</a></li>
+      </ul>
+    </nav>
 
- <nav id="navbar">
-  <h2 class="logo">
-    <span class="terminal-symbol">&gt;_</span>
-    <span class="terminal-bracket">[</span>
-    <span class="terminal-user">sudo::Aditya</span>
-    <span class="terminal-bracket">]</span>
-  </h2>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span id="changing-text">Aditya Sharma</span></h1>
+        <p class="subtitle">Building modern & scalable applications</p>
 
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#Collaboration">Collaboration</a></li>
-    <li><a href="#Achievements">Achievements</a></li>
-    <li><a href="#HireMe">Hire Me</a></li>
-  </ul>
-</nav>
+        <button class="hire-btn" onclick="scrollToSection('HireMe')">
+          Hire Me
+        </button>
+      </div>
 
+      <div class="hero-image">
+        <img src="Developer.webp" alt="Profile Picture" />
+      </div>
+    </section>
 
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
 
-  <section id="home" class="hero">
-  <div class="hero-content">
-    <h1>
-      Hi, I'm <span id="changing-text">Aditya Sharma</span>
-    </h1>
-    <p class="subtitle">Building modern & scalable applications</p>
+      <div class="about-box">
+        <p>
+          I am a <strong>final-year MCA student</strong> with a strong interest
+          in <strong>Full Stack Development</strong>,
+          <strong>Backend Engineering</strong>, and
+          <strong>Database Management</strong>.
+        </p>
 
-    <button class="hire-btn" onclick="scrollToSection('HireMe')">
-      Hire Me
-    </button>
-  </div>
+        <p>
+          I enjoy building scalable applications, designing efficient backend
+          systems, and creating clean, user-friendly interfaces that solve
+          real-world problems.
+        </p>
+      </div>
+    </section>
 
-  <div class="hero-image">
-    <img src="Developer.webp" alt="Profile Picture">
-  </div>
-</section>
+    <section id="skills" class="section reveal">
+      <h2>Skills</h2>
 
+      <div class="skills-container">
+        <div class="skill-box">
+          <h4>Java</h4>
+          <div class="progress"><div data-width="90%"></div></div>
+        </div>
 
- 
-  <section id="about" class="section reveal">
-  <h2>About Me</h2>
+        <div class="skill-box">
+          <h4>HTML / CSS</h4>
+          <div class="progress"><div data-width="99%"></div></div>
+        </div>
 
-  <div class="about-box">
-    <p>
-      I am a <strong>final-year MCA student</strong> with a strong interest in 
-      <strong>Full Stack Development</strong>, <strong>Backend Engineering</strong>, 
-      and <strong>Database Management</strong>.
-    </p>
+        <div class="skill-box">
+          <h4>JavaScript</h4>
+          <div class="progress"><div data-width="85%"></div></div>
+        </div>
+        <div class="skill-box">
+          <h4>React</h4>
+          <div class="progress"><div data-width="85%"></div></div>
+        </div>
+        <div class="skill-box">
+          <h4>React Native</h4>
+          <div class="progress"><div data-width="25%"></div></div>
+        </div>
+        <div class="skill-box">
+          <h4>SQL · MongoDB · Firebase</h4>
+          <div class="progress"><div data-width="80%"></div></div>
+        </div>
 
-    <p>
-      I enjoy building scalable applications, designing efficient backend systems,
-      and creating clean, user-friendly interfaces that solve real-world problems.
-    </p>
-  </div>
-</section>
+        <div class="skill-box">
+          <h4>Node.js / Express.js</h4>
+          <div class="progress"><div data-width="75%"></div></div>
+        </div>
 
+        <div class="skill-box">
+          <h4>Python</h4>
+          <div class="progress"><div data-width="88%"></div></div>
+        </div>
 
+        <div class="skill-box">
+          <h4>DevOps (Jenkins, Docker)</h4>
+          <div class="progress"><div data-width="60%"></div></div>
+        </div>
 
-  <section id="skills" class="section reveal">
-  <h2>Skills</h2>
+        <div class="skill-box">
+          <h4>GitHub</h4>
+          <div class="progress"><div data-width="100%"></div></div>
+        </div>
+        <div class="skill-box">
+          <h4>Tailwind</h4>
+          <div class="progress"><div data-width="60%"></div></div>
+        </div>
+      </div>
+    </section>
 
-  <div class="skills-container">
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
 
-    <div class="skill-box">
-      <h4>Java</h4>
-      <div class="progress"><div data-width="90%"></div></div>
-    </div>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Thapar Gpt Bot</h3>
+          <p>
+            Developed a Retrieval-Augmented Generation (RAG) system using
+            Falcon-7B and ChromaDB to answer queries about Thapar University’s
+            programs, hostels, and scholarships.
+          </p>
+        </div>
 
-    <div class="skill-box">
-      <h4>HTML / CSS</h4>
-      <div class="progress"><div data-width="99%"></div></div>
-    </div>
+        <div class="project-card">
+          <h3>Realtime Tracker</h3>
+          <p>
+            Created a real-time location tracker using Leaflet and WebSockets
+            that shows exact user markers on a live map.
+          </p>
+        </div>
 
-    <div class="skill-box">
-      <h4>JavaScript</h4>
-      <div class="progress"><div data-width="85%"></div></div>
-    </div>
+        <div class="project-card">
+          <h3>Medical Website</h3>
+          <p>
+            Built a user-friendly appointment booking system and implemented
+            DevOps practices for deployment.
+          </p>
+        </div>
 
-    <div class="skill-box">
-      <h4>SQL · MongoDB · Firebase</h4>
-      <div class="progress"><div data-width="80%"></div></div>
-    </div>
+        <div class="project-card">
+          <h3>Weather Application</h3>
+          <p>
+            A simple and clean React-based Weather Application that allows users
+            to search for weather conditions of any city using live API data.
+            The app displays temperature, humidity, min/max temperature, weather
+            description, and changes the background image + icon based on
+            weather conditions.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Tourism Website</h3>
+          <p>
+            Developed a responsive tourism site with dynamic destination details
+            and contact sections.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Photography Website</h3>
+          <p>
+            Created a responsive photography site with image galleries and
+            contact forms.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Simon Game</h3>
+          <p>
+            In this game user clicks on the button to follow the pattern as the
+            button blinks . If user pattern match from start to at any level
+            then game continous , if user press the wrong button and pattern not
+            match then game over and red color flash on screen.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Snake Game</h3>
+          <p>
+            A simple and classic Snake Game implemented using HTML, CSS, and
+            JavaScript. The game keeps track of your score, high score, and
+            elapsed time while providing an interactive and fun experience.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Zerodha</h3>
+          <p>
+            StockGame is a Zerodha-inspired trading and investment simulation
+            platform. It consists of a React frontend, Node.js + Express
+            backend, and a dashboard to visualize trading and investment data.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <div class="skill-box">
-      <h4>Node.js / Express.js</h4>
-      <div class="progress"><div data-width="75%"></div></div>
-    </div>
-
-    <div class="skill-box">
-      <h4>Python</h4>
-      <div class="progress"><div data-width="88%"></div></div>
-    </div>
-
-    <div class="skill-box">
-      <h4>DevOps (Jenkins, Docker)</h4>
-      <div class="progress"><div data-width="60%"></div></div>
-    </div>
-
-    <div class="skill-box">
-      <h4>GitHub</h4>
-      <div class="progress"><div data-width="99%"></div></div>
-    </div>
-
-  </div>
-</section>
-
-
-
-  <section id="projects" class="section reveal">
-    <h2>Projects</h2>
+    <section id="projects" class="section reveal">
+       <h3 class="Upcomping">Upcoming Projects</h3>
 
     <div class="project-container">
-      <div class="project-card">
-        <h3>Thapar Gpt Bot</h3>
-        <p>Developed a Retrieval-Augmented Generation (RAG) system using Falcon-7B and ChromaDB to answer
-        queries about Thapar University’s programs, hostels, and scholarships.</p>
+       
+
+        <div class="project-card">
+          <h3>Gaming News Website</h3>
+        </div>
+
+        <div class="project-card">
+          <h3>Bike Animation Website</h3>
+        </div>
+
+        <div class="project-card">
+          <h3>WanderLust Project</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="Collaboration" class="section reveal collaboration">
+      <h2>Open for Collaboration</h2>
+
+      <p class="collab-text">
+        I’m open to collaborating on interesting projects, internships, and
+        innovative ideas. If you have something exciting in mind, let’s build it
+        together.
+      </p>
+
+      <div class="collab-buttons">
+        <a href="#HireMe" class="collab-btn primary">Let’s Collaborate</a>
+        <a href="mailto:adityasharma5506@gmail.com" class="collab-btn outline">
+          Email Me
+        </a>
+      </div>
+    </section>
+
+    <section id="Achievements" class="section reveal">
+      <h2>Achievements & Certifications</h2>
+
+      <div class="achievement-container">
+        <div class="achievement-box">
+          <h4>Aws Academy Graduate</h4>
+          <a
+            href="Achievments/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250820-31-6y7t7i.pdf"
+            target="_blank"
+            >View Certificate</a
+          >
+        </div>
+        <div class="achievement-box">
+          <h4>Aws Academy Graduate</h4>
+          <a
+            href="Achievments/AWS_Academy_Graduate___Microservices_and_CI_CD_Pipeline_Builder___Training_Badge_Badge20251109-30-7p9rhy.pdf"
+            target="_blank"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="achievement-box">
+          <h4>Full Stack Web Development</h4>
+          <a href="Achievments/FullStack.pdf" target="_blank"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="achievement-box">
+          <h4>Deliotte Certificate</h4>
+          <a href="Achievments/Deliotte certfificate.pdf" target="_blank"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="achievement-box">
+          <h4>Introduction To Modern Ai</h4>
+          <p>Cisco</p>
+          <a href="Achievments/introduction-to-modern-ai.png" target="_blank"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="achievement-box">
+          <h4>DSA+JAVA</h4>
+          <p>Apna College</p>
+          <a
+            href="Achievments/certificate-alpha-plus-batch-659e5ab5c8da0ee07e075b56.pdf"
+            target="_blank"
+            >View Certificate</a
+          >
+        </div>
+        <div class="achievement-box">
+          <h4>Tata Crudle</h4>
+          <a href="Achievments/TataCrudle.jpg" target="_blank"
+            >View Certificate</a
+          >
+        </div>
+        <div class="achievement-box">
+          <h4>PreGrad</h4>
+          <a
+            href="Achievments/Certificate of Participation - Aditya Sharma.pdf"
+            target="_blank"
+            >View Certificate</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="HireMe" class="section reveal">
+      <h2>Hire Me</h2>
+      <p class="contact-text">Let’s Connect. Feel free to reach out 👇</p>
+
+      <!-- Social Icons -->
+      <div class="socials">
+        <a
+          href="https://github.com/Userunknown84"
+          target="_blank"
+          title="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/aditya-sharma-340253236/"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:adityasharma5506@gmail.com" title="Email Me">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
 
-      <div class="project-card">
-        <h3>Realtime Tracker</h3>
-        <p>Created a real-time location tracker using Leaflet and WebSockets that shows exact user markers on a live map.</p>
-      </div>
+      <form
+        class="contact-form"
+        action="mailto:adityasharma5506@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <input type="text" name="Name" placeholder="Your Name" required />
+        <input type="email" name="Email" placeholder="Your Email" required />
+        <textarea
+          name="Message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
 
-      <div class="project-card">
-        <h3>Medical Website</h3>
-        <p>Built a user-friendly appointment booking system and implemented DevOps practices for deployment.</p>
-      </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-      <div class="project-card">
-        <h3>Weather Application</h3>
-        <p>A simple and clean React-based Weather Application that allows users to search for weather conditions of any city using live API data.
-            The app displays temperature, humidity, min/max temperature, weather description, and changes the background image + icon based on weather conditions.</p>
-      </div>
-      <div class="project-card">
-        <h3>Tourism Website</h3>
-        <p>Developed a responsive tourism site with dynamic destination details and contact sections.</p>
-      </div>
-      <div class="project-card">
-        <h3>Photography Website</h3>
-        <p>Created a responsive photography  site with image galleries and contact forms.</p>
-      </div>
-      <div class="project-card">
-        <h3>Simon Game</h3>
-        <p>In this game user clicks on the button to follow the pattern as the button blinks . If user pattern match from start to at any level then game continous , if user press the wrong button and pattern not match then game over and red color flash on screen.</p>
-      </div>
-      <div class="project-card">
-        <h3>Snake Game</h3>
-        <p>A simple and classic Snake Game implemented using HTML, CSS, and JavaScript. The game keeps track of your score, high score, and elapsed time while providing an interactive and fun experience.</p>
-      </div>
+    <footer>
+      <p>© 2025 Aditya Sharma</p>
+    </footer>
 
-    </div>
-  </section>
-
-  <section id="Collaboration" class="section reveal collaboration">
-  <h2>Open for Collaboration</h2>
-
-  <p class="collab-text">
-    I’m open to collaborating on interesting projects, internships, 
-    and innovative ideas. If you have something exciting in mind, 
-    let’s build it together.
-  </p>
-
-  <div class="collab-buttons">
-    <a href="#HireMe" class="collab-btn primary">Let’s Collaborate</a>
-    <a href="mailto:adityasharma5506@gmail.com" class="collab-btn outline">
-      Email Me
-    </a>
-  </div>
-</section>
-
-
-  <section id="Achievements" class="section reveal">
-  <h2>Achievements & Certifications</h2>
-
-  <div class="achievement-container">
-
-    <div class="achievement-box">
-      <h4>Aws Academy Graduate</h4>
-      <a href="Achievments/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250820-31-6y7t7i.pdf" target="_blank">View Certificate</a>
-    </div>
-     <div class="achievement-box">
-      <h4>Aws Academy Graduate</h4>
-      <a href="Achievments/AWS_Academy_Graduate___Microservices_and_CI_CD_Pipeline_Builder___Training_Badge_Badge20251109-30-7p9rhy.pdf" target="_blank">View Certificate</a>
-    </div>
-
-    <div class="achievement-box">
-      <h4>Deliotte Certificate</h4>
-      <a href="Achievments/Deliotte certfificate.pdf" target="_blank">View Certificate</a>
-    </div>
-
-    <div class="achievement-box">
-      <h4>Introduction To Modern Ai</h4>
-      <p>Cisco</p>
-      <a href="Achievments/introduction-to-modern-ai.png" target="_blank">View Certificate</a>
-    </div>
-
-    <div class="achievement-box">
-      <h4>DSA+JAVA</h4>
-      <p>Apna College</p>
-      <a href="Achievments/certificate-alpha-plus-batch-659e5ab5c8da0ee07e075b56.pdf" target="_blank">View Certificate</a>
-    </div>
-    <div class="achievement-box">
-      <h4>Tata Crudle</h4>
-      <a href="Achievments/TataCrudle.jpg" target="_blank">View Certificate</a>
-    </div>
-     <div class="achievement-box">
-      <h4>PreGrad</h4>
-      <a href="Achievments/Certificate of Participation - Aditya Sharma.pdf" target="_blank">View Certificate</a>
-    </div>
-
-  </div>
-</section>
-
-
-
-<section id="HireMe" class="section reveal">
-  <h2>Hire Me</h2>
-  <p class="contact-text">Let’s Connect. Feel free to reach out 👇</p>
-
-  <!-- Social Icons -->
-  <div class="socials">
-    <a href="https://github.com/Userunknown84" target="_blank" title="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/in/aditya-sharma-340253236/" target="_blank" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="mailto:adityasharma5506@gmail.com" title="Email Me">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
-
-  
-  <form class="contact-form" 
-        action="mailto:adityasharma5506@gmail.com" 
-        method="post" 
-        enctype="text/plain">
-
-    <input type="text" name="Name" placeholder="Your Name" required>
-    <input type="email" name="Email" placeholder="Your Email" required>
-    <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-
-  <footer>
-    <p>© 2025 Aditya Sharma</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
