@@ -537,16 +537,16 @@ footer {
   padding-bottom: 30px;
 }
 
-/* NAVBAR BASE */
 #navbar {
   backdrop-filter: blur(10px);
   background: rgba(15, 23, 42, 0.85);
   width: 100%;
   position: relative; 
   z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* smooth line */
 }
 
-
+/* MOBILE */
 @media (max-width: 768px) {
   #navbar {
     position: fixed;   
@@ -554,13 +554,13 @@ footer {
     left: 0;
     width: 100%;
     z-index: 1000;    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* remove glitch line */
+    backdrop-filter: blur(10px); /* keep blur */
   }
 
-  
   body {
     padding-top: 70px; 
   }
-
 
   #navbar ul {
     flex-direction: column;
