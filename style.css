@@ -503,7 +503,40 @@ footer {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Shadow to separate */
   z-index: 1000;
 }
+#nav-links{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
 
+.menu-icon{
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width:768px){
+
+  .menu-icon{
+    display: block;
+  }
+
+  #nav-links{
+    position: absolute;
+    top: 70px;
+    right: -250px;
+    width: 220px;
+    background:#0f172a;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.3s;
+  }
+
+  #nav-links.active{
+    right: 0;
+  }
+}
 /* LOGO */
 .logo {
   font-size: 1.2rem;
